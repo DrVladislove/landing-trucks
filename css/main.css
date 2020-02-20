@@ -1,0 +1,371 @@
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+#delivery {
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+hr {
+    width: 90px;
+    height: 6px !important;
+    background-color: #C8A35F;
+    border: 0;
+    margin: 0;
+}
+header {
+    background: #2F343A;
+}
+
+header li{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+
+header i{
+    color: #C8A35F;
+    font-size: 20px;
+    padding: 0 18px 0 30px;
+}
+
+header a{
+    color: #fff !important;
+    font-size: 14px;
+}
+
+header img { 
+        border-right: 1px solid #F2F2F2;
+        padding-right: 30px;
+}
+
+header .navbar-toggler {
+    color: #fff;
+    height: 16px;
+    width: 30px;
+}
+/*humb*/
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+    width: 54px;
+    height: 45px;
+    position: relative;
+    margin: 0 -20px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  /* Icon 2 */
+  
+  
+  #nav-icon2 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 50%;
+    background: #fff;;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  #nav-icon2 span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 9px 9px 0;
+  }
+  
+  #nav-icon2 span:nth-child(odd) {
+    left:0px;
+    border-radius: 9px 0 0 9px;
+  }
+  
+  #nav-icon2 span:nth-child(1), #nav-icon2 span:nth-child(2) {
+    top: 0px;
+  }
+  
+  #nav-icon2 span:nth-child(3), #nav-icon2 span:nth-child(4) {
+    top: 18px;
+  }
+  
+  #nav-icon2 span:nth-child(5), #nav-icon2 span:nth-child(6) {
+    top: 36px;
+  }
+  
+  #nav-icon2.open span:nth-child(1),#nav-icon2.open span:nth-child(6) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #nav-icon2.open span:nth-child(2),#nav-icon2.open span:nth-child(5) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  #nav-icon2.open span:nth-child(1) {
+    left: 5px;
+    top: 7px;
+  }
+  
+  #nav-icon2.open span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 7px;
+  }
+  
+  #nav-icon2.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+  }
+  
+  #nav-icon2.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+  }
+  
+  #nav-icon2.open span:nth-child(5) {
+    left: 5px;
+    top: 29px;
+  }
+  
+  #nav-icon2.open span:nth-child(6) {
+    left: calc(50% - 5px);
+    top: 29px;
+  }
+  
+
+/*humb-end*/
+
+.title_img img{
+    position: absolute;
+    width: -webkit-fill-available;
+}
+
+#title h1 {
+    font-weight: bold;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#title h4 {
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.title_row {
+    align-items: center;
+}
+.title-row .col-md-12 {
+    height: fit-content;
+}
+
+#title_text {
+    border: 1px solid #C8A35F;
+    padding: 45px 70px;
+}
+
+@keyframes slide_top {
+    from {margin:0;}
+    50%{
+        margin-top: 30px;
+    }
+    to {margin:0;}
+}
+
+.slide_top img{
+    animation-name: slide_top;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/*delivery*/
+
+#delivery {
+    background: #393f47;
+    height: auto;
+}
+
+#delivery h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#delivery h4 {
+    font-size: 18px;
+    color: #fff;
+}
+#delivery button {
+    color: #fff;
+    font-size: 16px;
+    background: #C8A35F;
+    border: none;
+    padding: 15px 70px;
+    margin-top: 35px;
+}
+
+.trucks img{
+    display: none;
+    width: 445px;
+    height: 266px;
+}
+
+.trucks img.active{
+    display: block;
+}
+.arrows a {
+    display: inline-flex;
+}
+.arrows h5{
+    font-size: 16px;
+    font-weight: bold;
+    color: #C8A35F;
+    text-transform: uppercase;
+    margin: 0 30px 0 30px;
+}
+.arrows .row{
+    align-content: space-between;
+    height: 100%;
+}
+
+#next, #back{
+    cursor: pointer;
+}
+/*delivery-end*/
+
+/*services*/
+
+#services {
+    background: #2F343A;
+    height: auto;
+    padding-top: 120px;
+}
+#services h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 50px;
+
+}
+#services h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+}
+#services i{
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#services .col-md-3{
+    background: #393F47;
+    border: 1px solid #2F343A;
+    padding: 35px 45px;
+}
+
+#services .col-md-3:hover{
+    background: #C8A35F !important;
+}
+
+#services i:hover{
+    color: #000;
+}
+/*services-end*/
+
+/*description*/
+
+#description {
+    background: #2F343A;
+    height: auto;
+    padding: 200px 0;
+}
+
+#description h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#description p{
+    font-size: 16px;
+    color: #fff;
+    padding-top: 25px;
+}
+
+#description h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
+#description h4{
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+#description h5 {
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+}
+#description .card_txt{
+    background: #fff;
+    border: 1px solid #C8A35F;
+    padding: 25px 50px;
+}
+
+#card_img {
+    background-image: url(../img/small-truck.png);
+    
+}
+
+/*description-end*/
+
+#map{
+    height: 400px;
+}
+
+footer {
+    background: #C8A35F;
+    height: auto;
+    padding-top: 120px;
+}
+footer p{
+    font-family: 14px;
+    color: #F2F2F2;
+}
+footer a {
+    color: #000;
+    font-size: 14px;
+}
